@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>bank.online</groupId>
-	<artifactId>BankZealous</artifactId>
+	<artifactId>ZealousBank</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>BankZealous</name>
+	<name>ZealousBank</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>

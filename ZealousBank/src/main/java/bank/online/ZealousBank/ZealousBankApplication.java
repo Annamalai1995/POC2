@@ -1,13 +1,13 @@
-package bank.online.BankZealous;
+package bank.online.ZealousBank;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BankZealousApplication {
+public class ZealousBankApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BankZealousApplication.class, args);
+		SpringApplication.run(ZealousBankApplication.class, args);
 	}
 
 }
