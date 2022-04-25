@@ -3,25 +3,24 @@ import { useParams } from "react-router-dom"
 export const Agaram=()=>{
     return(
         <>
-            <h1>Happiness Depends upon ourselves</h1>
-
+            <h1>World best literature</h1>
         </>
     )
 }
+
 export const Thenali=()=>{
+    return(
+        <>
+            <h1>Assembly poet from vijayanagar emperium</h1>
+        </>
+    )
+}
+
+export const Vikatan=()=>{
     const{gopi}=useParams()
     return(
         <>
-            <h1>Happiness Overloaded{gopi}</h1>
-
-        </>
-    )
-}
-export const Vikram=()=>{
-    return(
-        <>
-            <h1>Happiness</h1>
-
+            <h1>Weekly article which has few {gopi}</h1>
         </>
     )
 }

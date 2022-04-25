@@ -1,4 +1,4 @@
-import {Container,Nav,Navbar} from 'react-bootstrap'
+import {Container, Nav, Navbar} from 'react-bootstrap'
 export const Menus=()=>{
     return(
         <Navbar bg="light" expand="lg">
@@ -8,16 +8,13 @@ export const Menus=()=>{
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="sample" />
             <Navbar.Collapse id="sample">
-            <Nav className="ms-auto">
-                <Nav.Link href="/">Component One </Nav.Link>
-                <Nav.Link href="/second">Component Two</Nav.Link>
-                <Nav.Link href="/third">Component Three</Nav.Link>
-                
-            </Nav>
+                <Nav className="ms-auto">
+                    <Nav.Link active href="/">Component One</Nav.Link>
+                    <Nav.Link href="/second">Component Two</Nav.Link>
+                    <Nav.Link href="/third">Component Three</Nav.Link>
+                </Nav>
             </Navbar.Collapse>
         </Container>
     </Navbar>
-
     )
-    
 }
