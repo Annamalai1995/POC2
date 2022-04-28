@@ -1,12 +1,10 @@
 import { Menus } from "./Navi";
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-
 import { NewAccount } from "./SignUp";
-
-
 import { Agaram,Thenali,Vikatan } from "./MyCompas";
 import { Login } from "./Login";
+import { Home } from "./Home";
 
 const App=()=>{
   return(
@@ -16,8 +14,8 @@ const App=()=>{
         <Routes>
         <Route path="/Login" exact element={<Login/>}/>
           <Route path="/sign" exact element={<NewAccount/>}/>
-          <Route path="/second/:gopi" exact element={<Vikatan/>}/>
-          <Route path="/third" exact element={<Thenali/>}/>
+          <Route path="/home" exact element={<Home/>}/>
+          
         </Routes>
       </BrowserRouter>
     </>

@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -14,6 +15,7 @@ public class BankController {
 	AccountService aserv;
 	@Autowired
 	TransactionService tserv;
+	
 	@PostMapping("/newacc")
 	public String accountCreate(@RequestBody Account account)
 	{
@@ -22,5 +24,11 @@ public class BankController {
 		
 		
 	}
+	@PostMapping("login")
+	public Account callValid(@RequestParam("cid")long cid,@RequestParam("ps")String ps)
+	{
+		return aserv.getByValid(cid, ps);
+	}
+	
 
 }

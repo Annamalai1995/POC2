@@ -9,10 +9,6 @@ import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import CancelPresentationIcon from '@mui/icons-material/CancelPresentation';
 import { useState } from 'react';
 import { adding } from './Connect';
-
-
-
-
 export const NewAccount=()=>{
 
     const[validate,setValidate]=useState({

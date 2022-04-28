@@ -4,6 +4,7 @@ import LoginIcon from '@mui/icons-material/Login';
 import CancelIcon from '@mui/icons-material/Cancel';
 import { Carousel } from "react-bootstrap"
 import { useState } from "react";
+import { stepIn } from "./Connect";
 
 export const Login=()=>{
 
@@ -23,14 +24,24 @@ export const Login=()=>{
         })
     }
 
-    const logging=()=>{
+    const logging=async()=>{
+        const t = await stepIn(log)
+        if(t.data)
+        {
+            window.location.assign("/home");
+        }
+        else 
+        {
+            cancel()
+        }
+
 
     }
 
     const cancel=()=>{
         setLog(()=>{
             return{
-                "user":"",
+                "user":0,
                 "pass":""
             }
         })
